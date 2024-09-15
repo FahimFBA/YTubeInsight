@@ -6,8 +6,8 @@ with open("README.md", "r", encoding="utf-8") as fh:
 setuptools.setup(
     name="ytubeinsight",
     version="0.1.0",
-    author="Your Name",
-    author_email="your.email@example.com",
+    author="Md. Fahim Bin Amin",
+    author_email="fahimbinamin@gmail.com",
     description="A Python package for YouTube channel analytics",
     long_description=long_description,
     long_description_content_type="text/markdown",
