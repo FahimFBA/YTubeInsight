@@ -11,7 +11,7 @@ setuptools.setup(
     description="A Python package for YouTube channel analytics",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/ytubeinsight",
+    url="https://github.com/FahimFBA/ytubeinsight",
     packages=setuptools.find_packages(exclude=("tests",)),
     classifiers=[
         "Development Status :: 3 - Alpha",
