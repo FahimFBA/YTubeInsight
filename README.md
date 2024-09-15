@@ -1,5 +1,10 @@
 # YTubeInsight
 
+[![PyPI version](https://badge.fury.io/py/ytubeinsight.svg)](https://badge.fury.io/py/ytubeinsight)
+[![Python Versions](https://img.shields.io/pypi/pyversions/ytubeinsight.svg)](https://pypi.org/project/ytubeinsight/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Documentation Status](https://readthedocs.org/projects/ytubeinsight/badge/?version=latest)](https://ytubeinsight.readthedocs.io/en/latest/?badge=latest)
+
 YTubeInsight is a Python package for effortless YouTube channel analytics. Track video counts, extract details, and gain insights from YouTube channels with ease.
 
 ## Features
@@ -12,11 +17,46 @@ YTubeInsight is a Python package for effortless YouTube channel analytics. Track
 
 ## Installation
 
-You can install YTubeInsight using pip:
+You can install YTubeInsight using pip. We recommend using a virtual environment to manage your dependencies. You can choose between venv (built into Python) or conda based on your preference.
 
-```
-pip install ytubeinsight
-```
+### Option 1: Using venv
+
+1. Create a virtual environment:
+   ```
+   python -m venv ytubeinsight-env
+   ```
+
+2. Activate the virtual environment:
+   - On Windows:
+     ```
+     ytubeinsight-env\Scripts\activate
+     ```
+   - On macOS and Linux:
+     ```
+     source ytubeinsight-env/bin/activate
+     ```
+
+3. Install YTubeInsight:
+   ```
+   pip install ytubeinsight
+   ```
+
+### Option 2: Using conda
+
+1. Create a conda environment:
+   ```
+   conda create --name ytubeinsight-env python=3.8
+   ```
+
+2. Activate the conda environment:
+   ```
+   conda activate ytubeinsight-env
+   ```
+
+3. Install YTubeInsight:
+   ```
+   pip install ytubeinsight
+   ```
 
 ## Quick Start
 
@@ -86,12 +126,58 @@ Returns a dictionary containing:
 - `video_count`: Number of videos published in the last year
 - `video_data`: List of dictionaries, each containing video details (title, publish date, URL)
 
+For more detailed API documentation, please visit our [Read the Docs page](https://ytubeinsight.readthedocs.io/).
+
+## Obtaining a YouTube Data API Key
+
+To use YTubeInsight, you need a YouTube Data API key. Here's how to get one:
+
+1. Go to the [Google Developers Console](https://console.developers.google.com/).
+2. Create a new project or select an existing one.
+3. Enable the YouTube Data API v3 for your project.
+4. Create credentials (API key) for your project.
+5. Use this API key in your YTubeInsight calls.
+
+Remember to keep your API key secret and never share it publicly.
+
 ## Requirements
 
 - Python 3.6+
 - google-api-python-client
 - requests
 - beautifulsoup4
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/FahimFBA/YTubeInsight.git
+   cd YTubeInsight
+   ```
+
+2. Create and activate a virtual environment (choose one):
+   - Using venv:
+     ```
+     python -m venv venv
+     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+     ```
+   - Using conda:
+     ```
+     conda create --name ytubeinsight-dev python=3.8
+     conda activate ytubeinsight-dev
+     ```
+
+3. Install the development dependencies:
+   ```
+   pip install -e .[dev]
+   ```
+
+4. Run the tests:
+   ```
+   pytest
+   ```
 
 ## Contributing
 
@@ -103,14 +189,20 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
+Please make sure to update tests as appropriate and adhere to the [Code of Conduct](CODE_OF_CONDUCT.md).
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## Changelog
+
+For a detailed changelog, please see the [CHANGELOG.md](CHANGELOG.md) file.
+
 ## Acknowledgments
 
 - Google for providing the YouTube Data API
-- All contributors who will help improve this package
+- All contributors who help improve this package
 
 ## Support
 
