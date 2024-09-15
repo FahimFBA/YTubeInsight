@@ -50,8 +50,8 @@ setuptools.setup(
         ],
     },
     project_urls={
-        "Bug Reports": "https://github.com/yourusername/ytubeinsight/issues",
-        "Source": "https://github.com/yourusername/ytubeinsight",
+        "Bug Reports": "https://github.com/FahimFBA/ytubeinsight/issues",
+        "Source": "https://github.com/FahimFBA/ytubeinsight",
         "Documentation": "https://ytubeinsight.readthedocs.io/",
     },
 )
