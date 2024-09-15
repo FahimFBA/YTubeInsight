@@ -17,14 +17,7 @@ recursive-include ytubeinsight *.py
 recursive-include tests *.py
 
 # Include all documentation files
-recursive-include docs *.rst
-recursive-include docs *.py
-recursive-include docs Makefile
-recursive-include docs *.bat
-recursive-include docs *.css
-recursive-include docs *.html
-recursive-include docs *.js
-recursive-include docs *.txt
+recursive-include docs *.rst *.py Makefile *.bat *.css *.html *.js *.txt
 
 # Include all example files
 recursive-include examples *.py
