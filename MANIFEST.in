@@ -1,0 +1,60 @@
+# Include the README
+include README.md
+
+# Include the license file
+include LICENSE
+
+# Include the requirements file
+include requirements.txt
+
+# Include the setup.py file
+include setup.py
+
+# Include all Python files in the main package
+recursive-include ytubeinsight *.py
+
+# Include all test files
+recursive-include tests *.py
+
+# Include all documentation files
+recursive-include docs *.rst
+recursive-include docs *.py
+recursive-include docs Makefile
+recursive-include docs *.bat
+recursive-include docs *.css
+recursive-include docs *.html
+recursive-include docs *.js
+recursive-include docs *.txt
+
+# Include all example files
+recursive-include examples *.py
+
+# Include any data files your package might use
+# recursive-include ytubeinsight/data *
+
+# Exclude all bytecode files
+global-exclude *.py[cod]
+
+# Exclude all git-related files
+global-exclude .git*
+
+# Exclude cache directories
+global-exclude __pycache__
+
+# Exclude build and distribution directories
+prune build
+prune dist
+
+# Exclude egg-info directory
+prune *.egg-info
+
+# Exclude any potential virtual environment directories
+global-exclude venv
+global-exclude *.venv
+global-exclude env
+global-exclude *.env
+
+# Exclude IDE-specific files and directories
+global-exclude .vscode
+global-exclude .idea
+global-exclude *.swp
