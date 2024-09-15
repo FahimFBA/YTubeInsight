@@ -1,0 +1,5 @@
+site_name: YTubeInsight
+nav:
+  - Home: index.md
+  - Usage: usage.md
+theme: readthedocs
