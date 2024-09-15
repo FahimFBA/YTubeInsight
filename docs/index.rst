@@ -8,6 +8,7 @@ YTubeInsight is a Python package for effortless YouTube channel analytics. It al
    :caption: Contents:
 
    usage
+   api_reference
 
 Indices and tables
 ==================
