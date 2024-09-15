@@ -6,6 +6,7 @@ from datetime import datetime
 from ytubeinsight.analyzer import analyze_channel
 from ytubeinsight.exceptions import YTubeInsightError
 
+
 class TestAnalyzer(unittest.TestCase):
     """Test cases for the analyze_channel function."""
 
@@ -50,7 +51,8 @@ class TestAnalyzer(unittest.TestCase):
         }
         mock_youtube.playlistItems().list().execute.return_value = mock_response
 
-        result = analyze_channel('https://www.youtube.com/channel/UC1234567890', 'fake_api_key')
+        result = analyze_channel(
+            'https://www.youtube.com/channel/UC1234567890', 'fake_api_key')
 
         self.assertEqual(result['video_count'], 1)
         self.assertEqual(len(result['video_data']), 1)
@@ -60,6 +62,7 @@ class TestAnalyzer(unittest.TestCase):
         """Test channel analysis with invalid input."""
         with self.assertRaises(YTubeInsightError):
             analyze_channel('invalid_input', 'fake_api_key')
+
 
 if __name__ == '__main__':
     unittest.main()

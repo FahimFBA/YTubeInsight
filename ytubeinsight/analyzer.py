@@ -78,3 +78,4 @@ def analyze_channel(channel_input, api_key, is_channel_id=False):
         raise YTubeInsightError(f"YouTube API error: {str(e)}") from e
     except Exception as e:
         raise YTubeInsightError(f"An error occurred during analysis: {str(e)}") from e
+    

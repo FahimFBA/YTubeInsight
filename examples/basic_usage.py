@@ -6,10 +6,12 @@ from ytubeinsight import analyze_channel, YTubeInsightError
 # Replace with your actual YouTube Data API key
 API_KEY = os.environ.get('YOUTUBE_API_KEY', 'YOUR_API_KEY_HERE')
 
+
 def main():
     """Run example analyses on YouTube channels."""
     # Example with full channel URL
-    channel_url = 'https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw'  # Google Developers channel
+    # Google Developers channel
+    channel_url = 'https://www.youtube.com/channel/UC_x5XG1OV2P6uZZ5FSM9Ttw'
     print("Analyzing channel by URL...")
     analyze_channel_and_print_results(channel_url, API_KEY)
 
@@ -18,10 +20,12 @@ def main():
     print("\nAnalyzing channel by ID...")
     analyze_channel_and_print_results(channel_id, API_KEY, is_channel_id=True)
 
+
 def analyze_channel_and_print_results(channel_input, api_key, is_channel_id=False):
     """Analyze a channel and print the results."""
     try:
-        result = analyze_channel(channel_input, api_key, is_channel_id=is_channel_id)
+        result = analyze_channel(
+            channel_input, api_key, is_channel_id=is_channel_id)
         print(f"Videos published in the last year: {result['video_count']}")
         print("\nFirst 5 videos:")
         for video in result['video_data'][:5]:
@@ -31,6 +35,7 @@ def analyze_channel_and_print_results(channel_input, api_key, is_channel_id=Fals
             print()
     except YTubeInsightError as e:
         print(f"An error occurred: {str(e)}")
+
 
 if __name__ == "__main__":
     main()

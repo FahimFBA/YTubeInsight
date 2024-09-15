@@ -4,6 +4,7 @@ import unittest
 from unittest.mock import patch, MagicMock
 from ytubeinsight.utils import get_channel_id, get_uploads_playlist_id
 
+
 class TestUtils(unittest.TestCase):
     """Test cases for utility functions."""
 
@@ -14,7 +15,8 @@ class TestUtils(unittest.TestCase):
         mock_response.text = '<html><body>Some HTML content</body></html>'
         mock_get.return_value = mock_response
 
-        channel_id = get_channel_id('https://www.youtube.com/channel/UC1234567890')
+        channel_id = get_channel_id(
+            'https://www.youtube.com/channel/UC1234567890')
         self.assertEqual(channel_id, 'UC1234567890')
 
     @patch('ytubeinsight.utils.requests.get')
@@ -54,6 +56,7 @@ class TestUtils(unittest.TestCase):
 
         playlist_id = get_uploads_playlist_id(mock_youtube, 'UC1234567890')
         self.assertIsNone(playlist_id)
+
 
 if __name__ == '__main__':
     unittest.main()
