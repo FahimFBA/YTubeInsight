@@ -3,8 +3,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'YTubeInsight'
-copyright = '2023, Your Name'
-author = 'Your Name'
+copyright = '2024, Md. Fahim Bin Amin'
+author = 'Md. Fahim Bin Amin'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1.0'
