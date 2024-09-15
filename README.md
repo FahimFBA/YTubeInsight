@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-If you encounter any problems or have any questions, please [open an issue](https://github.com/yourusername/YTubeInsight/issues) on GitHub.
+If you encounter any problems or have any questions, please [open an issue](https://github.com/FahimFBA/YTubeInsight/issues) on GitHub.
 
 ## Disclaimer
 
