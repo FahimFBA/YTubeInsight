@@ -10,23 +10,46 @@ readme = "README.md"
 authors = [{ name = "Md. Fahim Bin Amin", email = "fahimbinamin@gmail.com" }]
 license = { file = "LICENSE" }
 classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
-    "Programming Language :: Python",
+    "Operating System :: OS Independent",
     "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 keywords = ["youtube", "analytics", "api"]
 dependencies = [
-    "google-api-python-client >= 2.0.0",
-    "requests >= 2.25.0",
-    "beautifulsoup4 >= 4.9.0",
+    "google-api-python-client>=2.0.0",
+    "requests>=2.25.0",
+    "beautifulsoup4>=4.9.0",
 ]
 requires-python = ">=3.6"
 
 [project.optional-dependencies]
-dev = ["pytest", "pytest-cov"]
+dev = [
+    "pytest>=6.0",
+    "pytest-cov>=2.0",
+    "flake8>=3.9",
+    "black>=21.0",
+    "isort>=5.0",
+]
+docs = [
+    "sphinx>=3.0",
+    "sphinx-rtd-theme>=0.5",
+]
 
 [project.urls]
-Homepage = "https://github.com/FahimFBA/ytubeinsight"
+"Homepage" = "https://github.com/FahimFBA/ytubeinsight"
+"Bug Reports" = "https://github.com/FahimFBA/ytubeinsight/issues"
+"Source" = "https://github.com/FahimFBA/ytubeinsight"
+"Documentation" = "https://ytubeinsight.readthedocs.io/"
+
+[project.scripts]
+ytubeinsight = "ytubeinsight.cli:main"
 
 [tool.setuptools.packages.find]
 exclude = ["tests", "examples"]
