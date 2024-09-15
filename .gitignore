@@ -127,3 +127,39 @@ dmypy.json
 
 # VS Code
 .vscode/
+
+# Pyenv
+.python-version
+
+# Poetry
+poetry.lock
+
+# Pytest
+.pytest_cache/
+
+# Coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Node (in case you use any JavaScript tools)
+node_modules/
+
+# Virtual environment
+venv/
+*.venv
+env/
+*.env
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
