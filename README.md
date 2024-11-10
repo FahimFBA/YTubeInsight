@@ -4,6 +4,7 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/ytubeinsight.svg)](https://pypi.org/project/ytubeinsight/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Documentation Status](https://readthedocs.org/projects/ytubeinsight/badge/?version=latest)](https://ytubeinsight.readthedocs.io/en/latest/?badge=latest)
+![PyPI Downloads](https://static.pepy.tech/badge/ytubeinsight)
 
 YTubeInsight is a Python package for effortless YouTube channel analytics. Track video counts, extract details, and gain insights from YouTube channels with ease.
 
