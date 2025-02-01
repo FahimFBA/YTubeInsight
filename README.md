@@ -6,7 +6,7 @@
 [![Documentation Status](https://readthedocs.org/projects/ytubeinsight/badge/?version=latest)](https://ytubeinsight.readthedocs.io/en/latest/?badge=latest)
 ![PyPI Downloads](https://static.pepy.tech/badge/ytubeinsight)
 
-YTubeInsight is a Python package for effortless YouTube channel analytics. Track video counts, extract details, and gain insights from YouTube channels with ease.
+YTubeInsight is a Python package for effortless YouTube channel analytics. Track video counts, extract details, and gain insights from YouTube channels with ease. You can check the download stats of YTubeInsight [here](https://pypistats.org/packages/ytubeinsight).
 
 ## Features
 
